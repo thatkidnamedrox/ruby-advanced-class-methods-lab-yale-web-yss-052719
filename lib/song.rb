@@ -21,9 +21,9 @@ class Song
     song
   end
 
-  def self.new_by_name(name)
+  def self.new_by_name(n)
     song = self.create
-    @name = name
+    @name = n
   end
 
 end
