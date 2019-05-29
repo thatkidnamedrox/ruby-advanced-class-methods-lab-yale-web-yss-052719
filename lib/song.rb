@@ -61,7 +61,7 @@ class Song
     filename[1].slice!(".mp3")
     name = filename[1]
     artist_name = filename[0]
-    song.find_or_create_by_name(name)
+    song = self.find_or_create_by_name(name)
     song.artist_name = artist_name
     song
   end
