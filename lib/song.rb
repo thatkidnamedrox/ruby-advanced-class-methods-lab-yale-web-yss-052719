@@ -8,11 +8,11 @@ class Song
 
   def save
     self.class.all << self
+    self
   end
 
   def self.create
     self.new.save
-    self
   end
 
   def self.new_by_name(name)
